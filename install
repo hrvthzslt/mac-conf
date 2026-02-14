@@ -1,0 +1,20 @@
+#!/bin/sh
+
+install_brew() {
+  if ! command -v brew >/dev/null 2>&1; then
+    echo "Homebrew not found. Installing Homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    return
+  fi
+  echo "Homebrew is already installed."
+}
+
+main() {
+  install_brew
+  brew install --cask karabiner-elements
+  brew tap FelixKratz/formulae
+  brew install borders
+  brew install --cask nikitabobko/tap/aerospace
+}
+
+main
