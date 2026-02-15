@@ -46,5 +46,5 @@ Add all complex modifications called `keyd-port` in the `Karabiner-Elements` set
 - **Opt-Shift-r**: Reload config
 - **Opt-Enter**: Open _Wezterm_
 - **Opt-w**: Open _Chrome_ with the default profile
-- **Opt-Shift-w**: Open _Chrome_
+- **Opt-Shift-w**: Open _Chrome_ with the second profile
 - **Cmd-q/Opt-q**: Close the focused app instance (instead of the whole app)

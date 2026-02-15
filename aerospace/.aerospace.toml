@@ -158,7 +158,7 @@ on-mode-changed = []
 
     # Launch Google Chrome
     alt-w = 'exec-and-forget open -n -a "Google Chrome" --args --profile-directory="Default"'
-    alt-shift-w = 'exec-and-forget open -n -a "Google Chrome"'
+    alt-shift-w = 'exec-and-forget open -n -a "Google Chrome" --args --profile-directory="Profile 1"'
 
     alt-shift-r = 'reload-config'
 
