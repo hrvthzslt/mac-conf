@@ -48,3 +48,22 @@ Add all complex modifications called `keyd-port` in the `Karabiner-Elements` set
 - **Opt-w**: Open _Chrome_ with the default profile
 - **Opt-Shift-w**: Open _Chrome_ with the second profile
 - **Cmd-q/Opt-q**: Close the focused app instance (instead of the whole app)
+
+## Karabiner-Elements
+
+| Key          | Hold      | Tap       |
+| ------------ | --------- | --------- |
+| Caps Lock    | Control   | Escape    |
+| Left Command | Command   | Backspace |
+| Tab          | Nav Layer | Tab       |
+
+### Nav Layer (hold Tab)
+
+- **Tab-u,i,o,y**: Switch workspace (1..4)
+- **Tab-h,j,k,l**: Left, Down, Up, Right
+- **Tab-p**: Page Up
+- **Tab-n**: Page Down
+- **Tab-m**: Home
+- **Tab-/**: End
+- **Tab-,**: Word Left
+- **Tab-.**: Word Right
