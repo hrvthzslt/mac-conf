@@ -6,9 +6,11 @@ Config files exclusively for a great macOS experience. No universal tools here.
 
 ## Components
 
-- [Aerospace](https://github.com/nikitabobko/AeroSpace)
-- [Karabiner-Elements](https://karabiner-elements.pqrs.org/)
-- [JankyBorders](https://github.com/FelixKratz/JankyBorders)
+- **[Homebrew](https://brew.sh/)**: Package management
+- **GNU Coreutils**: Linux compatibility
+- **[Aerospace](https://github.com/nikitabobko/AeroSpace)**: Tiling window management
+- **[Karabiner-Elements](https://karabiner-elements.pqrs.org/)**: Keyboard customization
+- **[JankyBorders](https://github.com/FelixKratz/JankyBorders)**: Window borders for macOS
 
 ## Setup
 
