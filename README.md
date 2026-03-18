@@ -10,7 +10,12 @@ Config files exclusively for a great macOS experience. No universal tools here.
 - **GNU Coreutils**: Linux compatibility
 - **[Aerospace](https://github.com/nikitabobko/AeroSpace)**: Tiling window management
 - **[Karabiner-Elements](https://karabiner-elements.pqrs.org/)**: Keyboard customization
-- **[JankyBorders](https://github.com/FelixKratz/JankyBorders)**: Window borders for macOS
+- **[JankyBorders](https://github.com/FelixKratz/JankyBorders)**: Window borders
+- **[Maccy](https://maccy.app/)**: Clipboard management
+- **[Latest](https://max.codes/latest/)**: Software update outside of the App Store
+- **[Shottr](https://shottr.cc/)**: Screenshot tool
+- **[MonitorControl](https://github.com/MonitorControl/MonitorControl)**: Control external monitor brightness and volume
+- **[WezTerm](https://wezterm.org/index.html)**: Terminal emulator
 
 ## Setup
 
@@ -20,7 +25,7 @@ Install `brew` and required packages:
 make install
 ```
 
-Log out and log back in, then start `Karabiner-Elements` and `Aerospace` for the first time.
+Log out and log back in, then start `Karabiner-Elements` and `Aerospace` for the first time. Set them to start at login. `Aerospace` will start the other apps on its own.
 
 Link config files:
 
@@ -32,7 +37,7 @@ Add all complex modifications called `keyd-port` in the `Karabiner-Elements` set
 
 ## Other Settings
 
-- I usually change the Caps Lock modifier to Control in the system settings. Despite using `Karabiner-Elements`, in some key combinations Caps Lock may still get activated.
+- I usually change the Caps Lock modifier to Control in the system settings. Despite using `Karabiner-Elements`, in some key combinations Caps Lock may still got activated.
 
 ## AeroSpace
 
@@ -69,3 +74,9 @@ Add all complex modifications called `keyd-port` in the `Karabiner-Elements` set
 - **Tab-/**: End
 - **Tab-,**: Word Left
 - **Tab-.**: Word Right
+
+## Other Keybindings
+
+- **Cmd-Shift-1**: Screenshot of the entire screen
+- **Cmd-Shift-2**: Screenshot of a selected area
+- **Cmd-Shift-C**: Open Maccy popup, I usually change this to **Cmd-Shift-P**
