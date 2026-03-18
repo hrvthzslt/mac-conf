@@ -11,7 +11,10 @@ config-version = 2
 #   'exec-and-forget borders inactive_color=0xffe1e3e4 active_color=0xff494d64 width=3'
 # ]
 after-startup-command = [
-  'exec-and-forget borders active_color=0xff494d64 width=3'
+    'exec-and-forget borders active_color=0xff494d64 width=3',
+    'exec-and-forget open -a Maccy',
+    'exec-and-forget open -a MonitorControl',
+    'exec-and-forget open -a Shottr',
 ]
 
 # Start AeroSpace at login
