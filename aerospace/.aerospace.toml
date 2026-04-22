@@ -60,6 +60,11 @@ persistent-workspaces = ["1", "2", "3", "4"]
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 on-mode-changed = []
 
+# Floating window exceptions.
+[[on-window-detected]]
+    if.app-id = 'cc.ffitch.shottr'
+    run = 'layout floating'
+
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
@@ -74,12 +79,12 @@ on-mode-changed = []
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = [{ monitor."built-in" = 4 }, 8]
-    inner.vertical =   [{ monitor."built-in" = 4 }, 8]
-    outer.left =       [{ monitor."built-in" = 3 }, 6]
-    outer.bottom =     [{ monitor."built-in" = 3 }, 6]
-    outer.top =        [{ monitor."built-in" = 3 }, 6]
-    outer.right =      [{ monitor."built-in" = 3 }, 6]
+    inner.horizontal = [{ monitor."built-in" = 0 }, 7]
+    inner.vertical =   [{ monitor."built-in" = 0 }, 7]
+    outer.left =       [{ monitor."built-in" = 0 }, 5]
+    outer.bottom =     [{ monitor."built-in" = 0 }, 5]
+    outer.top =        [{ monitor."built-in" = 0 }, 5]
+    outer.right =      [{ monitor."built-in" = 0 }, 5]
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
