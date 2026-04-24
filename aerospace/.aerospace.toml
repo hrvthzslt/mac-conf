@@ -15,6 +15,7 @@ after-startup-command = [
     'exec-and-forget open -a Maccy',
     'exec-and-forget open -a MonitorControl',
     'exec-and-forget open -a Shottr',
+    'exec-and-forget open -a Scroll\ Reverse'
 ]
 
 # Start AeroSpace at login
@@ -63,6 +64,10 @@ on-mode-changed = []
 # Floating window exceptions.
 [[on-window-detected]]
     if.app-id = 'cc.ffitch.shottr'
+    run = 'layout floating'
+
+[[on-window-detected]]
+    if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
     run = 'layout floating'
 
 # Possible values: (qwerty|dvorak|colemak)
