@@ -5,7 +5,8 @@ help:
 
 link: # Symlink configurations
 	ln -sf $(CURDIR)/aerospace/.aerospace.toml $(HOME)/.aerospace.toml
-	ln -sf $(CURDIR)/karabiner/keyd-port.json $(KARABINER_PATH)/keyd-port.json
+	# ln -sf $(CURDIR)/karabiner/keyd-port.json $(KARABINER_PATH)/keyd-port.json
+	ln -sf $(CURDIR)/kanata/kanata.json $(KARABINER_PATH)/kanata.json
 
 .PHONY: install
 install: # Install brew and packages

@@ -9,9 +9,21 @@ install_brew() {
   echo "Homebrew is already installed."
 }
 
+install_virtual_hid_driver() {
+  curl -L -o /tmp/VirtualHIDDriver.pkg https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/releases/download/v6.14.0/Karabiner-DriverKit-VirtualHIDDevice-6.14.0.pkg
+  sudo installer -pkg /tmp/VirtualHIDDriver.pkg -target /
+  /Applications/.Karabiner-VirtualHIDDevice-Manager.app/Contents/MacOS/Karabiner-VirtualHIDDevice-Manager activate
+}
+
+brew_services() {
+  sudo brew services start kanata
+}
+
 main() {
   xcode-select --install
+  install_virtual_hid_driver
   install_brew
+  brew_services
   brew bundle --file=./Brewfile
 }
 

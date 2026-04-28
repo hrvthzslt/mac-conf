@@ -9,7 +9,7 @@ Config files exclusively for a great macOS experience. No universal tools here.
 - **[Homebrew](https://brew.sh/)**: Package management
 - **GNU Coreutils**: Linux compatibility
 - **[Aerospace](https://github.com/nikitabobko/AeroSpace)**: Tiling window management
-- **[Karabiner-Elements](https://karabiner-elements.pqrs.org/)**: Keyboard customization
+- **[Kanata](https://github.com/jtroo/kanata)**: Keyboard customization
 - **[JankyBorders](https://github.com/FelixKratz/JankyBorders)**: Window borders
 - **[Maccy](https://maccy.app/)**: Clipboard management
 - **[Latest](https://max.codes/latest/)**: Software update outside of the App Store
@@ -19,25 +19,19 @@ Config files exclusively for a great macOS experience. No universal tools here.
 
 ## Setup
 
-Install `brew` and required packages:
+Install `brew` and required packages, then link config files:
 
 ```bash
-make install
+make install link
 ```
 
-Log out and log back in, then start `Karabiner-Elements` and `Aerospace` for the first time. Set them to start at login. `Aerospace` will start the other apps on its own.
+Log out and log back in, then start **AeroSpace** for the first time. Set it to start at login. **AeroSpace** will start the other apps on its own.
 
-Link config files:
-
-```bash
-make link
-```
-
-Add all complex modifications called `keyd-port` in the `Karabiner-Elements` settings.
+**Kanata** will start automatically as a brew service, if there is a problem logs can be inspected with `tail -f /opt/homebrew/var/log/kanata.log`
 
 ## Other Settings
 
-- I usually change the Caps Lock modifier to Control in the system settings. Despite using `Karabiner-Elements`, in some key combinations Caps Lock may still got activated.
+- I usually change the Caps Lock modifier to Control in the system settings, despite using `kanata`.
 
 ## AeroSpace
 
@@ -56,7 +50,7 @@ Add all complex modifications called `keyd-port` in the `Karabiner-Elements` set
 - **Opt-Shift-w**: Open _Chrome_ with the second profile
 - **Cmd-q/Opt-q**: Close the focused app instance (instead of the whole app)
 
-## Karabiner-Elements
+## Kanata
 
 | Key          | Hold      | Tap       |
 | ------------ | --------- | --------- |
