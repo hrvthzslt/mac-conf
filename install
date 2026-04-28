@@ -17,6 +17,7 @@ install_virtual_hid_driver() {
 
 brew_services() {
   sudo brew services start kanata
+  brew services start borders
 }
 
 main() {
