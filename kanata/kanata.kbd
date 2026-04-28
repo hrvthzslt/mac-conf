@@ -1,0 +1,66 @@
+;; Kanata configuration - port of karabiner/keyd-port.json
+;;
+;; Behaviour summary:
+;;   Caps Lock    -> hold: Control, tap: Escape
+;;   Left Control -> hold: Control, tap: Escape
+;;   Left Command -> hold: Command, tap: Backspace
+;;   Tab          -> hold: Nav layer, tap: Tab
+;;
+;; Nav layer (Tab held):
+;;   h / j / k / l -> Left / Down / Up / Right
+;;   y / u / i / o -> Opt+4 / Opt+1 / Opt+2 / Opt+3   (Aerospace workspaces)
+;;   p / n         -> Page Up / Page Down
+;;   m / /         -> Home / End
+;;   , / .         -> Word Left / Word Right          (Opt+Left / Opt+Right)
+;;
+;; Reference: https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defvar
+  tap-time  200
+  hold-time 200
+)
+
+;; defsrc is required but stays empty: deflayermap below maps inputs directly,
+;; and process-unmapped-keys lets all other keys pass through.
+(defsrc)
+
+(defalias
+  ;; Caps Lock and Left Control share the same behaviour
+  cap (tap-hold-press $tap-time $hold-time esc lctl)
+  ctl (tap-hold-press $tap-time $hold-time esc lctl)
+  cmd (tap-hold-press $tap-time $hold-time bspc lmet)
+  nav (tap-hold-press $tap-time $hold-time tab  (layer-while-held nav))
+)
+
+(deflayermap (base)
+  caps @cap
+  lctl @ctl
+  lmet @cmd
+  tab  @nav
+)
+
+(deflayermap (nav)
+  ;; vim arrows
+  h left
+  j down
+  k up
+  l right
+
+  ;; Aerospace workspace switching (Opt+1..4)
+  u A-1
+  i A-2
+  o A-3
+  y A-4
+
+  ;; page / line navigation
+  p pgup
+  n pgdn
+  m home
+  / end
+  , A-left
+  . A-right
+)
