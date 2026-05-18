@@ -6,7 +6,7 @@ brew "gawk"
 
 cask "karabiner-elements"
 brew "FelixKratz/formulae/borders"
-cask "nikitabobko/tap/aerospace"
+cask "hillyu/tap/dwmac"
 cask "maccy"
 cask "latest"
 cask "shottr"
