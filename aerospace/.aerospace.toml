@@ -127,6 +127,7 @@ on-mode-changed = []
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     alt-t = 'layout tiles horizontal vertical'
     alt-m = 'layout accordion horizontal vertical'
+    alt-f = 'fullscreen on'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     alt-h = 'focus left'
